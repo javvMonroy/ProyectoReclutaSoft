@@ -1,6 +1,11 @@
 package mx.uacm.reclutaSoft.constantes;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
+
+import org.apache.commons.collections.ListUtils;
 
 import com.google.common.collect.ImmutableMap;
 
@@ -29,7 +34,10 @@ public class Regla {
 	public static final int LONG_MIN_HABILIDAD = 3;
 	public static final int LONG_MAX_HABILIDAD = 70;
 		
-	public static final String TIPO_HABILIDAD = "Lenguaje de programación";
+	public static final List<String> TIPO_HABILIDAD = ListUtils.
+			unmodifiableList(new ArrayList<String>(Arrays.
+					asList("Idioma", "Lenguaje de progrmación", "Framework", "otro")
+					));
 	
 	public static final int MIN_PUNTUACION = 0;
 	public static final int MAX_PUNTUACION = 5;
@@ -41,8 +49,11 @@ public class Regla {
 	
 	public static final int MIN_REPUTACION = 0;
 	public static final int MAX_REPUTACION = 5;
-	
-	public static final String GRADO_ACADEMICO = "Estudiante";
+		
+	public static final List<String> GRADO_ACADEMICO = ListUtils.
+			unmodifiableList(new ArrayList<String>(Arrays.
+					asList("Estudiante", "Licenciatura", "Ingeniería", "Posgrado", "Maestría", "Doctorado", "otro")
+					));
 	
 	public static final int MIN_NOM_PROYECTO = 1;
 	public static final int MAX_NOM_PROYECTO = 80;
@@ -50,14 +61,8 @@ public class Regla {
 	public static final int MIN_DES_PROYECTO = 1;
 	public static final int MAX_DES_PROYECTO = 300;
 	
-	public static final String NOMBRE_ROL = "Programador";
-	
-	/*public static final String KG_10 = "10";
-	public static final String KG_15 = "15";
-	public static final String KG_20 = "20";
-	public static final Map<String, Integer> COSTO_SERVICIO = ImmutableMap.of(
-			KG_10, 60,
-			KG_15, 80,
-			KG_20, 120
-	);*/
+	public static final List<String> NOMBRE_ROL = ListUtils.
+			unmodifiableList(new ArrayList<String>(Arrays.
+					asList("Programador", "Lider de proyecto", "Diseñador", "Analista", "Tester")
+					));
 }

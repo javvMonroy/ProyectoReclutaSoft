@@ -22,8 +22,13 @@ public class Error {
 	public static final String MAL_NOMBRE_ROL = "MAL_NOMBRE_ROL";
 	
 	public static final String NO_LETRAS_ESPACIOS = "Contiene caracteres diferentes de letras o espacios";
-//	public static final String NO_LONGITUD = "La longitud de caracteres es incorrecta";
-//	public static final String NO_NUMEROS = "Contiene caracteres diferentes de números";
-//	public static final String NO_ENCONTRADO = "No se encuentra el valor";
-//	public static final String NO_RANGO = "El valor esta fuera del rango";
+	public static final String NO_LETRAS = "Contiene caracteres diferentes de letras";
+	public static final String NO_LONGITUD = "La longitud de caracteres es incorrecta";
+	public static final String NO_CORREO = "No tiene formato de correo electrónico";
+	public static final String NO_NUMEROS = "Contiene caracteres diferentes de números";
+	public static final String NO_NULL = "Debe contener almenos un elemento";
+	public static final String NO_RANGO = "El valor esta fuera del rango";	
+	public static final String NO_WEB = "No tiene formato de dirección web";	
+	public static final String NO_ENCONTRADO = "No se encuentra el valor";
+	public static final String NO_LET_ESP_NUM = "Contiene caracteres diferentes de letras o espacios o números";
 }
