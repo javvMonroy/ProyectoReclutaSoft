@@ -43,7 +43,7 @@ public class UsuarioServiceImplTest {
 		int edad = 0;
 		String web = "";
 		String titulo = "";
-				
+		
 		try {
 			usuarioService.alta(nombre, apellidoPaterno, apellidoMaterno, correo, contrasenia, telefono, habilidades, edad, web, titulo);
 			
